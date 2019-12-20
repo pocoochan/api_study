@@ -11,4 +11,13 @@ fetch('https://api.openweathermap.org/data/2.5/weather?APPID=4b5774e9f3d2a07b84f
   .then(response => response.text())
   .then(text => {
     console.log(text);
+    var data = JSON.parse(text);
+    console.log("data");
+    console.log(data);
+    console.log("data.weather");
+    console.log(data.weather);
+    console.log("data.weather[0]");
+    console.log(data.weather[0]);
+    console.log("data.weather[0].description");
+    console.log(data.weather[0].description);
   });
