@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang=“ja”>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <meta charset=“UTF-8">
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+  <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css”>
+  <link rel=“stylesheet” href=“css/style.css”>
   <title>ユーザー登録</title>
 </head>
 <body>
-  <div id="login-page">
-    <h1 class="text-primary mb-4">ユーザー登録</h1>
-    <div class="signUpFrom mb-4">
-      <input  id="user_name" type="text" placeholder="名前" required>
-      <input  id="user_bio" type="text" placeholder="自己紹介" required>
-      <input  id="user_email" type="text" placeholder="email" required>
-      <input  id="user_password" type="text" placeholder="password" required>
-      <input  id="user_ password_confirmation" type="text" placeholder="passwordを再入力" required>
-      <a href="">ログインする</a>
+  <div class=“wrapper”>
+    <h1 class=“text-primary mb-4">ユーザー登録</h1>
+    <div class=“signUpFrom mb-4”>
+      <input id=“user_name” type=“text” placeholder=“名前” required>
+      <input id=“user_bio” type=“text” placeholder=“自己紹介” required>
+      <input id=“user_email” type=“email” placeholder=“email” required>
+      <input id=“user_password” type=“password” placeholder=“password” required>
+      <input id=“user_password_confirmation” type=“password” placeholder=“passwordを再入力” required>
+      <a href=“” onclick=“sign_up();return false;” class=“btn btn-primary btn”>送信</a>
+    </div>
+    <div>
+      <a href=“login.html”>ログインする</a>
     </div>
   </div>
-
-  <script src="./post-api.js"></script>
+  <script src=“main.js”></script>
 </body>
 </html>
